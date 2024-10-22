@@ -1,12 +1,12 @@
 /*02. 문자열 타입
   문자열 타입은 우리가 입력하는 텍스트를 의미한다
   java에서는 문자열을 "" 으로 표현을 했었는데
-  작은 따옴표('') 큰 따옴표("")백틱(``)으로 값을 감싼다.*/ 
+  작은 따옴표('')and 큰 따옴표("")백틱(``)으로 값을 감싼다.*/ 
 
   var string;
-  string = 'javacript';
-  string = "javacript";
-  string = `javacript`;
+  string = 'javascript';
+  string = "javascript";
+  string = `javascript`;
 
   string='작은 따옴표 내의 "작은따옴표"';
 
