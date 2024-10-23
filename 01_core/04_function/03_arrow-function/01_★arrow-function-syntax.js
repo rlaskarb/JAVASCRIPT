@@ -10,14 +10,15 @@ var message = function(){
 console.log(message());
 
 
-// function 생략가능
-message = () =>{
+// function() 구문 => 으로 대체함
+message = () => {
     return 'Arrow Function!!';
 }
 console.log(message());
 
 
 // 명령문(실행 할 코드 )이 하나만 있는 경우 중괄호 생략 가능
+// function(){return } --> () => 으로 대체함.
 message = () => 'Arrow Function us Simple';
 
 console.log(message());
