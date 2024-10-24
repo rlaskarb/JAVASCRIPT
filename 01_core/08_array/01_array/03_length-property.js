@@ -33,3 +33,10 @@ console.log(arr);
 const space = [,2,,4];
 console.log(space);
 console.log(space.length);
+
+/*
+ 일반적인 배열의 길이는 요소의 갯수를 의미한다.
+ 따라서 배열의 길이와 요소 갯수는 항상 일치하지만,
+ 자바스크립트에서 배열은 길이와 요소 갯수가
+ 항상 일치할 수는 없는 것에 주목해야 한다.
+*/

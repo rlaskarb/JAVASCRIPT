@@ -52,5 +52,8 @@ const backend = ['JAVA','spring','servlet','mybatis'];
 console.log(`slice(1,3) : ${backend.slice(1,3)}`);
 console.log(backend);
 
+// (index, 제거수, 추가값1, 추가값2, ...)
 console.log(`splice(3 , 1 ,'jdbc') : ${backend.splice(3 ,1 ,'jdbc')}`);
 console.log(backend);
+// 배열의 순서 뒤집기
+console.log(`reverse() : ${[1,2,3,4,5].reverse()}`);
