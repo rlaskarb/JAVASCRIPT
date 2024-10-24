@@ -68,7 +68,7 @@ forEach()
 numbers.forEach(item => console.log(item));
 //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 //★ 배열의 map() : 배열요소 대상으로 콜백 함수 호출 후 반환 값들로 새로운 배열을 반환 ★
-//★배열.map(function(item,index,array){})                                          ★
+//★배열.map(function(item,index,array){})                                       ★
 //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
 const types = [true ,1 ,'text'].map(item => typeof item);

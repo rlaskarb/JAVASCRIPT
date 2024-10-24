@@ -3,7 +3,7 @@ Array 가 가지고 있는 메소드
 */
 
 // 기준이 될 배열 생성
-const foodList =['싸이버거','냉면','물회','짜장면','짬뽕'];
+const foodList = ['싸이버거','냉면','물회','짜장면','물회'];
 
 /*
 indexOf : 배열의 요소가 위치하는 인덱스 리턴
@@ -12,7 +12,7 @@ includes : 배열에 해당 요소가 포함하는 지 여부 리턴
 */
 
 console.log(`indexof(인자) : ${foodList.indexOf('물회')}`);
-console.log(`indexof(인자,3) : ${foodList.indexOf('물회', 3)}`); //?? 이거 확인 꼭해 답이 다름.
+console.log(`indexof(인자,3) : ${foodList.indexOf('물회',3)}`); //?? 이거 확인 꼭해 답이 다름.
 console.log(`indexof(존재하지 않는 요소) : ${foodList.indexOf('삼겹살')}`);
 
 console.log(`includes(인자) : ${foodList.includes('물회')}`);
