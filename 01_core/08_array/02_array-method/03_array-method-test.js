@@ -28,7 +28,8 @@ const ohgiraffers = [
 ohgiraffers.sort(function compare(a,b){
     return b.score - a.score 
 });
-console.log(ohgiraffers);
+ohgiraffers.forEach(function(getInfo){
+    console.log(getInfo)});
 
 // ohgiraffers 배열을 나이 역순으로 정렬
 
