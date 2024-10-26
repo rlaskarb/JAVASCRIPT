@@ -33,6 +33,11 @@
                     document.getElementsByClassName('drink coffee');
                     console.log($coffee);
 
+            const $use = document.getElementById('use');
+            const $useChild = $use.getElementsByClassName('drink');
+            [...$useChild].forEach(drink => drink.style.color = 'blue');
+            
+
     </script>
 </body>
 </html>
