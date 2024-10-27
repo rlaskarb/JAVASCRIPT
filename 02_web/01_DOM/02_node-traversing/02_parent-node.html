@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parent-node</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>02. 부모 노드 탐색</h1>
@@ -11,7 +11,7 @@
         부모 노드를 탐색하기 위해서는
         parentNode 프로퍼티를 사용할 수 있다.
     </pre>
-    <ul id="lists">
+    <ul id="list">
         <li class="coffee">커피</li>
         <li class="coke">콜라</li>
         <li class="milk">우유</li>
@@ -19,8 +19,7 @@
     <script>
         const $coke = document.querySelector('.coke');
         console.log($coke);
-        console.log($coke.parentNode); //coke의 부모인 ul 태그 lists 선택
-        
+        console.log($coke.parentNode); //coke의 부모인ul태그 list선택
     </script>
 </body>
 </html>
