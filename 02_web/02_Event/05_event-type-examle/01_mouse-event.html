@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .area{
+            background: lightyellow;
+            border: 1px solid black;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>01. 마우스 관련 이벤트</h1>
+    <h3>마우스 이벤트 대표적 예시</h3>
+    <ul>
+        <li>mouseover/up</li>
+        <li>mouseover/out</li>
+        <li>mouseover</li>
+        <li>click</li>
+        <li>contextmenu</li>
+    </ul>
+    <hr> <button>클릭</button>
+    <div class="area"></div>
+    <script>
+        const $btn =document.querySelector('button');
+        const $div =document.querySelector('.area');
+       // e 객체의 button 프로퍼티
+       // 0: 왼 / 1 : 휠 / 2 : 오
+        // $btn.onmousedown = e => {
+        //     $div.insertAdjacentHTML('beforeend','mousedown button' + e.button +"<br>");
+
+        // }
+
+        // $btn.onmouseup = e => {
+        //     $div.insertAdjacentHTML('beforeend','mouseup button' + e.button +"<br>");
+
+        // }
+
+        // 다른 학습을 위한 주석처리 
+        // $btn.onmouseover = e => {
+        //     $div.insertAdjacentHTML('beforeend','mouseover button' + e.button +"<br>");
+
+        // }
+
+        // $btn.onmouseout = e => {
+        //     $div.insertAdjacentHTML('beforeend','mouseout button' + e.button +"<br>");
+
+        // }
+
+        $btn.onclick = e => {
+            $div.insertAdjacentHTML('beforeend','onclick button = ' + e.button +"<br>");
+
+        }
+
+        
+        // $btn.oncontextmenu = e => {
+        //     $div.insertAdjacentHTML('beforeend','oncontextmenu button = ' + e.button +"<br>");
+
+        // }
+    </script>
+</body>
+</html>

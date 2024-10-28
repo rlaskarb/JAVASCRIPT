@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>03. addEventListener 방식으로 이벤트 등록</h1>
+    <pre>
+        깃 허브 복 붙하면서  필기를 써나가자 하 쓰기 싫다 
+        집에 가서 누어서 전기장판에서 따뜻하게 눕고 싶다. 아무것도 생각이 안난다 생각하기가 싫다
+    </pre>
+    <button id="btn">퇴근</button>
+    <script>
+        const $btn = document.getElementById('btn');
+        $btn.addEventListener('click',function(){
+            alert('그만 속아 바보야 ');
+        })
+
+        //프로퍼티 방식으로 이벤트 추가 해보기
+        $btn.onclick = function(){
+            console.log('프로퍼티 방식으로 낚시를 해보자');
+        }
+
+        $btn.addEventListener('click',function(){
+            console.log('add 방식으로 낚시를 해보자');
+        })
+
+        // 외부의 함수 정의 후 참조
+        const mouseover = () => console.log('마우스 호버가 뭐야?');
+        // 중복된 이벤트를 등록하면, 하나만 등록이 된다.
+        $btn.addEventListener('mouseover',mouseover);
+        $btn.addEventListener('mouseover',mouseover);
+    </script>
+</body>
+</html>
