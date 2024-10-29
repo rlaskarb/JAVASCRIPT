@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>01. open , alert , confirm , prompt 메소드 </h1>
+    <pre>
+        자바스크립트 언어는 브라우저 상에서 동작하는 언어이다.
+        자바스크립트가 web 상에서 동작을 할때
+        사용할 수 있는 기능이 있다.
+        web 상에서 가장 최상의 객체는 window 객체이다.
+        window
+            - DOM (document 등등)
+            - BOM (location , navigator 등등)
+            - JavaScript(Array, Function , Object 등등)
+        최 상단의 window 객체는 브라우저 창을 대변하고
+        브라우저를 제어할 수 있는 메소드를 제공한다.
+        window 는 전역 객체이기 때문에 생략이 가능하다.
+        ex -> window.alert() -> alert()  
+    </pre>
+    <h3>open</h3>
+    <pre>
+        window.open(url,name,params) 메소드로 새로운 창을 열수 있다.
+    </pre>
+    <button id="btn1">새로운 창을 열수 있다.</button>
+    <button id="btn2">새로운 창을 열수 있다.</button>
+    <script>
+        document.getElementById("btn1")
+                .onclick = () => window.open(
+                    'https://www.nexon.com'
+                    , '넥슨'
+                    ,'width = 800','height =800'
+                );
+            
+    </script>
+    <h3>alert</h3>
+    <pre>
+        깃 허 브 컨트로 시
+    </pre>
+    <script>
+        window.alert('알러트 창 등장~')
+    </script>
+
+    <h3>confirm</h3>
+    <pre>
+        깃 허 브 컨트롤 시
+    </pre>
+    <script>
+        const answer =window.confirm('계속 하시겠습니까?');
+        console.log(answer);
+        if(answer){
+            console.log('8시간 풀강의');
+        }else{
+            console.log('이번 시간까지!!');
+        }
+    </script>
+
+    <h3> prompt </h3>
+    <pre>
+        window.prompt(message , default)
+        message : 사용자가 어떤 값을 입력해야 되는지 안내문구
+        default : 택스트 입력 필드에 기본 값(문자열)
+        반환 값은 사용자 입력 값이며, 취소를 누르거나 esc 키를 누르게 되면 null 값 리턴
+    </pre>
+    <script>
+        const likeNumber = window.prompt('좋아하는 숫자를 입력해 주세요~' , 7);
+        console.log(likeNumber);
+        if(likeNumber){
+            alert('당신이 좋아하는 숫자는 ${likeNumber}이군요!')
+            //console.log('당신이 좋아하는 숫자는 ${likeNumber}이군요!')
+
+            }else{ alert('숫자를 반듯이 입력해주시오')
+           
+        }
+
+    </script>
+</body>
+</html>
